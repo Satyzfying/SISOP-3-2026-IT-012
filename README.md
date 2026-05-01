@@ -937,13 +937,13 @@ Battle berjalan realtime. Tampilan arena menunjukkan HP kedua prajurit, damage, 
 
 ![Battle realtime](assets/soal2-7.png)
 
-### Screenshot 7 - Ultimate dan Reward
+### Screenshot 8 - Ultimate dan Reward
 
 Setelah memiliki weapon, prajurit dapat menggunakan ultimate. Setelah battle selesai, XP, Gold, Level, dan hasil pertandingan diperbarui.
 
 ![Ultimate dan reward](assets/soal2-8.png)
 
-### Screenshot 8 - Battle History
+### Screenshot 9 - Battle History
 
 History menampilkan catatan pertandingan prajurit, termasuk waktu, lawan, hasil WIN/LOSS, dan XP yang didapat.
 
