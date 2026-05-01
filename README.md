@@ -895,33 +895,59 @@ Dengan cara ini, perubahan data akun, pembelian weapon, matchmaking, pengurangan
 
 ## Dokumentasi Hasil Uji
 
-### 1. Orion Berhasil Dijalankan
+### Screenshot 1 - Orion Server Siap
 
 Saat `./orion` dijalankan, server membuat IPC dan siap menerima request dari client.
 
-```text
-Orion is ready. Waiting for Eternal warriors...
-```
+![Orion server siap](assets/soal2-1.png)
 
-### 2. Eternal Gagal Jika Orion Belum Siap
+### Screenshot 2 - Eternal Main Menu
 
-Jika `./eternal` dijalankan sebelum `./orion`, client tidak bisa membuka komunikasi IPC.
+Saat `./eternal` dijalankan setelah server aktif, client berhasil masuk ke gerbang awal Eterion dan menampilkan menu Register, Login, dan Exit.
 
-```text
-[System] Orion is not ready. Start ./orion first.
-```
+![Eternal main menu](assets/soal2-2.png)
 
-### 3. Register dan Login
+### Screenshot 3 - Register dan Login Berhasil
 
-Register berhasil membuat akun baru dengan Gold 150, Lvl 1, XP 0, dan Weapon +0 Dmg. Username yang sama tidak bisa didaftarkan lagi, dan akun yang sedang aktif tidak bisa login di sesi lain.
+Register berhasil membuat akun baru, lalu login berhasil menampilkan profile awal prajurit dengan Gold 150, Lvl 1, XP 0, dan Weapon +0 Dmg.
 
-### 4. Matchmaking dan Battle
+![Register dan login berhasil](assets/soal2-3.png)
 
-Jika ada dua client masuk matchmaking, server mempertemukan keduanya dalam battle. Jika hanya satu client yang menunggu selama 35 detik, server membuat lawan bot bernama `Monster`.
+### Screenshot 4 - Validasi Akun
 
-### 5. Attack, Ultimate, dan Reward
+Username yang sudah terdaftar tidak bisa didaftarkan lagi. Akun yang sedang aktif juga tidak bisa login pada sesi client lain.
 
-Tombol `a` berhasil melakukan attack dengan cooldown 1 detik. Tombol `u` hanya berhasil jika pemain sudah memiliki weapon. Setelah battle selesai, XP, Gold, Level, dan History pemain diperbarui.
+![Validasi akun](assets/soal2-4.png)
+
+### Screenshot 5 - Menu Dunia Eterion
+
+Setelah login berhasil, prajurit masuk ke menu utama Battle of Eterion yang berisi Profile, Battle, Armory, Battle History, dan Logout.
+
+![Menu dunia Eterion](assets/soal2-5.png)
+
+### Screenshot 6 - Matchmaking
+
+Saat memilih Battle, prajurit masuk ke fase matchmaking selama 35 detik untuk mencari lawan. Jika ada prajurit lain yang sedang mencari match, server langsung mempertemukan keduanya.
+
+![Matchmaking](assets/soal2-6.png)
+
+### Screenshot 7 - Battle Realtime
+
+Battle berjalan realtime. Tampilan arena menunjukkan HP kedua prajurit, damage, weapon bonus, combat log, dan kontrol tombol `a` untuk attack serta `u` untuk ultimate.
+
+![Battle realtime](assets/soal2-7.png)
+
+### Screenshot 7 - Ultimate dan Reward
+
+Setelah memiliki weapon, prajurit dapat menggunakan ultimate. Setelah battle selesai, XP, Gold, Level, dan hasil pertandingan diperbarui.
+
+![Ultimate dan reward](assets/soal2-8.png)
+
+### Screenshot 8 - Battle History
+
+History menampilkan catatan pertandingan prajurit, termasuk waktu, lawan, hasil WIN/LOSS, dan XP yang didapat.
+
+![Battle history](assets/soal2-9.png)
 
 ## Kendala dan Error Selama Pengerjaan
 
